@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Demo2</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_5">Item 5</string>
+
+    <string name="txt_view_1">TextView1</string>
+    <string name="txt_view_2">TextView2</string>
+    <string name="txt_view_3">TextView3</string>
+
+    <string name="txt_btn_red">Red</string>
+    <string name="txt_btn_blue">Blue</string>
+    <string name="txt_btn_green">Green</string>
+</resources>

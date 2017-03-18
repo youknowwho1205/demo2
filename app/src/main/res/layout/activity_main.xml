@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youknowwho.demo2.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/item1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_1"
+            android:gravity="center"
+            android:padding="@dimen/spinner_top_margin"/>
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_2"
+            android:gravity="center"
+            android:padding="@dimen/spinner_top_margin"/>
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_3"
+            android:gravity="center"
+            android:padding="@dimen/spinner_top_margin"/>
+
+        <TextView
+            android:id="@+id/item4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_4"
+            android:gravity="center"
+            android:padding="@dimen/spinner_top_margin"/>
+
+        <TextView
+            android:id="@+id/item5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_5"
+            android:gravity="center"
+            android:padding="@dimen/spinner_top_margin"/>
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <!-- activity_screen_slide.xml -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:padding="@dimen/spinner_top_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:text="@string/txt_view_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="@string/txt_view_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="@string/txt_view_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_item"
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/parent_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="9"
+        android:layout_weight="1.8"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/spinner_top_margin">
+
+        <Button
+            android:id="@+id/btn_red"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/txt_btn_red"
+            android:layout_marginRight="@dimen/spinner_top_margin"/>
+
+        <Button
+            android:id="@+id/btn_blue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/txt_btn_blue"
+            android:layout_marginRight="@dimen/spinner_top_margin"/>
+
+        <Button
+            android:id="@+id/btn_green"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/txt_btn_green" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
